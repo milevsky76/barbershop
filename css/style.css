@@ -135,3 +135,50 @@ a {
 .user-navigation a:focus {
     background-color: #242424;
 }
+
+.features {
+    margin-bottom: 80px;
+}
+
+.features-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.features-item {
+    padding: 0 10px;
+    width: 280px;
+    text-align: center;
+}
+
+.features-title {
+    position: relative;
+    margin: 0 0 65px;
+    padding: 0;
+    font-size: 30px;
+    line-height: 42px;
+    color: #f7f4f1;
+}
+
+.features-title::after {
+    content: '';
+
+    position: absolute;
+    left: 50%;
+    bottom: -35px;
+    transform: rotate(45deg);
+
+    margin-left: -10px;
+    width: 20px;
+    height: 20px;
+
+    background-color: #f7f4f1;
+}
+
+.features-text {
+    margin: 0;
+    padding: 0;
+}
