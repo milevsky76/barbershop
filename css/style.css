@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-style: 14px;
+    line-height: 24px;
+    font-style: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    background-color: #000000;
+    background-image: url('../img/background.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
