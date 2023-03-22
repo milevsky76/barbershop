@@ -227,6 +227,7 @@ a {
     text-transform: uppercase;
     background-color: #000000;
     border: none;
+    cursor: pointer;
 }
 
 .button:hover,
