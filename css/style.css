@@ -1,14 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 14px;
     line-height: 24px;
     font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
-
     background-color: #000000;
     background-image: url('../img/background.jpg');
     background-position: top center;
@@ -55,24 +53,24 @@ a {
     line-height: 20px;
 }
 
-.main-header-logo {
+.main-navigation__logo {
     order: 1;
 }
 
-.logo-image {
+.logo__img {
     display: block;
     width: 371px;
     height: 155px;
 }
 
-.main-navigation-wrapper {
+.main-navigation__wrap {
     width: 100%;
     margin-bottom: 50px;
     color: #ffffff;
     background-color: #000000;
 }
 
-.main-navigation-wrapper .container {
+.main-navigation__inner-wrap {
     display: flex;
     justify-content: space-between;
 }
@@ -94,45 +92,41 @@ a {
     max-width: 220px;
 }
 
-.site-navigation a,
-.user-navigation a {
+.site-navigation__link,
+.user-navigation__link {
     display: block;
     padding: 26px 20px;
     color: #ffffff;
 }
 
-.user-navigation .login-link {
+.login-link {
     position: relative;
     padding-left: 50px;
 }
 
-.user-navigation .login-link::before {
+.login-link::before {
     content: '';
-
     position: absolute;
     top: 50%;
     left: 24px;
     transform: translateY(-50%);
-
     width: 16px;
     height: 16px;
-
     background-image: url('../img/login.svg');
     background-position: 0 0;
     background-repeat: no-repeat;
-
     opacity: 0.3;
 }
 
-.user-navigation .login-link:hover::before,
-.user-navigation .login-link:focus::before {
+.login-link:hover::before,
+.login-link:focus::before {
     opacity: 1;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
+.site-navigation__link:hover,
+.site-navigation__link:focus,
+.user-navigation__link:hover,
+.user-navigation__link:focus {
     background-color: #242424;
 }
 
@@ -140,7 +134,7 @@ a {
     margin-bottom: 80px;
 }
 
-.features-list {
+.features__list {
     display: flex;
     justify-content: space-between;
     margin: 0;
@@ -148,13 +142,13 @@ a {
     list-style: none;
 }
 
-.features-item {
+.features__item {
     padding: 0 10px;
     width: 280px;
     text-align: center;
 }
 
-.features-title {
+.features__title {
     position: relative;
     margin: 0 0 65px;
     padding: 0;
@@ -163,22 +157,23 @@ a {
     color: #f7f4f1;
 }
 
-.features-title::after {
+.features__title::after {
     content: '';
-
     position: absolute;
     left: 50%;
     bottom: -35px;
     transform: rotate(45deg);
-
     margin-left: -10px;
     width: 20px;
     height: 20px;
-
     background-color: #f7f4f1;
 }
 
-.features-text {
+.features__text {
+    margin: 0;
+    padding: 0;
+}
+
 .block-columns {
     display: flex;
     justify-content: space-between;

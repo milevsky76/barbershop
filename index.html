@@ -14,20 +14,31 @@
 <body>
     <header class="main-header">
         <nav class="main-navigation">
-            <a href="/" class="main-header-logo">
-                <img src="img/index-logo.svg" class="logo-image" width="371" height="155" alt="Логотип">
+            <a class="main-navigation__logo logo">
+                <img src="img/index-logo.svg" class="logo__img" width="371" height="155" alt="Логотип">
             </a>
-            <div class="main-navigation-wrapper">
-                <div class="container">
+            <div class="main-navigation__wrap">
+                <div class="main-navigation__inner-wrap container">
                     <ul class="site-navigation">
-                        <li><a href="info.html">Информация</a></li>
-                        <li><a href="news.html">Новости</a></li>
-                        <li><a href="price.html">Прайс-лист</a></li>
-                        <li><a href="catalog.html">Магазин</a></li>
-                        <li><a href="contacts.html">Контакты</a></li>
+                        <li class="site-navigation__item">
+                            <a href="info.html" class="site-navigation__link">Информация</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a href="news.html" class="site-navigation__link">Новости</a></li>
+                        <li class="site-navigation__item">
+                            <a href="price.html" class="site-navigation__link">Прайс-лист</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a href="catalog.html" class="site-navigation__link">Магазин</a>
+                        </li>
+                        <li class="site-navigation__item">
+                            <a href="contacts.html" class="site-navigation__link">Контакты</a>
+                        </li>
                     </ul>
                     <ul class="user-navigation">
-                        <li><a href="login.html" class="login-link">Вход</a></li>
+                        <li class="user-navigation__item">
+                            <a href="login.html" class="user-navigation__link login-link">Вход</a>
+                        </li>
                     </ul>
                 </div>
             </div>
