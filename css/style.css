@@ -177,6 +177,7 @@ a {
 .block-columns {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 36px;
     padding: 50px 80px;
     color: #000000;
     background-color: #f8f5f2;
@@ -185,12 +186,18 @@ a {
     background-repeat: no-repeat, repeat;
 }
 
+.block-columns:last-child {
+    margin-bottom: 65px;
+}
+
 .news {
     width: 380px;
 }
 
 .news__title,
-.gallery__title {
+.gallery__title,
+.contact-info__title,
+.appointment__title {
     margin: 0 0 25px;
     padding: 0;
     font-size: 30px;
@@ -253,4 +260,79 @@ a {
     display: block;
     width: 286px;
     height: 164px;
+}
+
+.contact-info {
+    width: 380px;
+}
+
+.contact-info__address {
+    font-style: normal;
+}
+
+.contact-info__phone {
+    margin: 0 0 30px;
+}
+
+.contact-info__number {
+    color: #000000;
+}
+
+.contact-info__number:hover,
+.contact-info__number:focus {
+    text-decoration: underline;
+}
+
+.contact-info__work-hours {
+    margin: 0 0 27px;
+}
+
+.contact-info__control {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.appointment {
+    width: 300px;
+}
+
+.appointment__text {
+    margin: 0 0 10px;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.form__input-wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 140px;
+}
+
+.form__name {
+    padding: 7px 15px;
+}
+
+.input {
+    font: inherit;
+    box-sizing: border-box;
+    width: 140px;
+    padding: 7.5px 15px;
+    border: 2px solid #000000;
+}
+
+.input:hover,
+.input:focus {
+    border: 2px solid #663d15;
+}
+
+.appointment__submit {
+    flex-grow: 1;
+    margin-top: 20px;
 }
