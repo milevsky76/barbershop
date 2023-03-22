@@ -34,23 +34,56 @@
         </nav>
     </header>
 
-    <section class="features container">
-        <h2 class="visually-hidden">Преимущества</h2>
-        <ul class="features-list">
-            <li class="features-item">
-                <h3 class="features-title">Быстро</h3>
-                <p class="features-text">Мы&nbsp;делаем свою работу быстро! Два часа пролетят незаметно и&nbsp;вы&nbsp;&mdash; счастливый обладатель стильной стрижки-минутки!</p>
-            </li>
-            <li class="features-item">
-                <h3 class="features-title">Круто</h3>
-                <p class="features-text">Забудьте, как вы&nbsp;стриглись раньше. Мы&nbsp;сделаем из&nbsp;вас звезду футбола или кино! Во&nbsp;всяком случае внешне.</p>
-            </li>
-            <li class="features-item">
-                <h3 class="features-title">Дорого</h3>
-                <p class="features-text">Наши мастера&nbsp;&mdash; профессионалы своего дела и&nbsp;не&nbsp;могут стоить дешево. К&nbsp;тому&nbsp;же, разве цена не&nbsp;дает определеный статус?</p>
-            </li>
-        </ul>
-    </section>
+    <div class="container">
+        <section class="features">
+            <h2 class="visually-hidden">Преимущества</h2>
+            <ul class="features__list">
+                <li class="features__item">
+                    <h3 class="features__title">Быстро</h3>
+                    <p class="features__text">Мы&nbsp;делаем свою работу быстро! Два часа пролетят незаметно и&nbsp;вы&nbsp;&mdash; счастливый обладатель стильной стрижки-минутки!</p>
+                </li>
+                <li class="features__item">
+                    <h3 class="features__title">Круто</h3>
+                    <p class="features__text">Забудьте, как вы&nbsp;стриглись раньше. Мы&nbsp;сделаем из&nbsp;вас звезду футбола или кино! Во&nbsp;всяком случае внешне.</p>
+                </li>
+                <li class="features__item">
+                    <h3 class="features__title">Дорого</h3>
+                    <p class="features__text">Наши мастера&nbsp;&mdash; профессионалы своего дела и&nbsp;не&nbsp;могут стоить дешево. К&nbsp;тому&nbsp;же, разве цена не&nbsp;дает определеный статус?</p>
+                </li>
+            </ul>
+        </section>
+
+        <div class="block-columns">
+            <section class="news">
+                <h2 class="news__title">Новости</h2>
+                <ul class="news__list">
+                    <li class="news__item">
+                        <p class="news__text">Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+                        <time class="news__date" datetime="2023-01-11">11 января</time>
+                    </li>
+                    <li class="news__item">
+                        <p class="news__text">В нашей команде пополнение, борис «бритва» стригунец, обладaтель множества титулов и наград пополнил наши стройные ряды</p>
+                        <time class="news__date" datetime="2023-01-18">18 января</time>
+                    </li>
+                </ul>
+                <a href="#" class="button news__link">Все новости</a>
+            </section>
+
+            <section class="gallery">
+                <h2 class="gallery__title">Фотогалерея </h2>
+                <figure class="gallery__block">
+                    <a href="#" class="gallery__link">
+                        <img src="img/photo-gallery.jpg" class="gallery__img" width="286" height="164"
+                            alt="Рабочее место">
+                    </a>
+                </figure>
+                <div class="gallery__control">
+                    <button type="button" class="button gallery__button-back">Назад</button>
+                    <button type="button" class="button gallery__button-next">Вперёд</button>
+                </div>
+            </section>
+        </div>
+    </div>
 </body>
 
 </html>
