@@ -171,7 +171,37 @@
         </div>
     </footer>
 
-    <section class="modal modal-map modal--hidden">
+    <section class="modal modal-login">
+        <h2 class="modal-login__title">Личный кабинет</h2>
+        <p class="modal-login__text">Введите пожалуйста свой логин и пароль</p>
+        <form action="" method="post" class="modal-login__form form form-user">
+            <p class="form-user__input-wrap">
+                <label for="user-login" class="visually-hidden">Логин</label>
+                <input type="text" class="input form-user__login" id="user-login" name="login" placeholder="email@example.com">
+            </p>
+            <p class="form-user__input-wrap">
+                <label for="user-password" class="visually-hidden">Пароль</label>
+                <input type="password" class="input form-user__password" id="user-password" name="password" placeholder="********">
+            </p>
+            <p class="form-user__check-info">
+                <label class="form-user__login-checkbox">
+                    <input type="checkbox" name="remember" class="form-user__remember visually-hidden">
+                    <span class="form-user__indicator">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="form-user__indicator-cross" width="12" height="12" viewBox="0 0 12 12"><path d="M11.12 2a.4.4 0 0 1 0 .57L8 5.71a.4.4 0 0 0 0 .57l3.14 3.14a.4.4 0 0 1 0 .57L10 11.13a.41.41 0 0 1-.57 0L6.27 8a.41.41 0 0 0-.57 0l-3.14 3.12a.41.41 0 0 1-.57 0L.85 10a.4.4 0 0 1 0-.57L4 6.28a.4.4 0 0 0 0-.57L.85 2.57a.4.4 0 0 1 0-.57L2 .86a.41.41 0 0 1 .57 0L5.7 4a.4.4 0 0 0 .57 0L9.41.87a.41.41 0 0 1 .57 0z"/></svg>
+                    </span>
+                    Запомнить меня
+                </label>
+                <a href="#" class="form-user__restore">Я забыл пароль!</a>
+            </p>
+            <button type="submit" class="button form-user__submit">Войти</button>
+        </form>
+        <button type="button" class="modal__close">
+            <svg xmlns="http://www.w3.org/2000/svg" class="modal__cross" width="12" height="12" viewBox="0 0 12 12"><path d="M11.12 2a.4.4 0 0 1 0 .57L8 5.71a.4.4 0 0 0 0 .57l3.14 3.14a.4.4 0 0 1 0 .57L10 11.13a.41.41 0 0 1-.57 0L6.27 8a.41.41 0 0 0-.57 0l-3.14 3.12a.41.41 0 0 1-.57 0L.85 10a.4.4 0 0 1 0-.57L4 6.28a.4.4 0 0 0 0-.57L.85 2.57a.4.4 0 0 1 0-.57L2 .86a.41.41 0 0 1 .57 0L5.7 4a.4.4 0 0 0 .57 0L9.41.87a.41.41 0 0 1 .57 0z"/></svg>
+            <span class="visually-hidden">Закрыть</span>
+        </button>
+    </section>
+
+    <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <p class="modal-map__inter">
             <img src="img/map.jpg" class="modal-map__img" width="766" height="560" alt="Офис по адресу г. Санкт-петербург, ул. Большая Конюшенная, д. 19/8">

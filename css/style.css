@@ -324,6 +324,7 @@ a {
     box-sizing: border-box;
     width: 140px;
     padding: 7.5px 15px;
+    background-color: #f9f6f3;
     border: 2px solid #000000;
 }
 
@@ -445,27 +446,12 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: #000000;
+    background-color: #f8f5f2;
+    background-image: url('../img/background-ripple.jpg');
+    background-position: 0 0;
+    background-repeat: repeat;
     box-shadow: 0px 35px 30px 5px rgba(0, 1, 1, 0.75);
-}
-
-.modal--hidden {
-    display: none;
-}
-
-.modal-map {
-    width: 766px;
-    height: 560px;
-    border: 7px solid #ffffff;
-}
-
-.modal-map__inter {
-    margin: 0;
-}
-
-.modal-map__img {
-    display: block;
-    width: 766px;
-    height: 560px;
 }
 
 .modal__close {
@@ -488,4 +474,154 @@ a {
 .modal__close:hover .modal__cross,
 .modal__close:focus .modal__cross {
     fill: #ffffff;
+}
+
+.modal-map {
+    display: none;
+    width: 766px;
+    height: 560px;
+    border: 7px solid #ffffff;
+}
+
+.modal-map__inter {
+    margin: 0;
+}
+
+.modal-map__img {
+    display: block;
+    width: 766px;
+    height: 560px;
+}
+
+.modal-login {
+    display: none;
+    width: 300px;
+    padding: 48px 80px 58px;
+}
+
+.modal-login__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.modal-login__text {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.form-user__input-wrap {
+    position: relative;
+    margin: 0;
+    margin-bottom: 9px;
+}
+
+.form-user__login {
+    background-image: url('../img/user.svg');
+    background-position: 270px center;
+    background-repeat: no-repeat;
+}
+
+.form-user__password {
+    background-image: url('../img/lock.svg');
+    background-position: 270px center;
+    background-repeat: no-repeat;
+}
+
+.form-user {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+.form-user__login,
+.form-user__password {
+    width: 300px;
+    padding-left: 15px;
+    padding-right: 39px;
+}
+
+.form-user__icon::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 13px;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.form-user__icon--user::before {
+    background-image: url('../img/user.svg');
+}
+
+.form-user__icon--lock::before {
+    background-image: url('../img/lock.svg');
+}
+
+.form-user__check-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 6px;
+    margin-bottom: 17px;
+}
+
+.form-user__login-checkbox {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.form-user__login-checkbox:hover,
+.form-user__login-checkbox:focus {
+    color: #663d15;
+}
+
+.form-user__indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-user__remember+.form-user__indicator {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 17px;
+    height: 17px;
+    border: 2px solid #000000;
+}
+
+.form-user__remember:hover+.form-user__indicator,
+.form-user__remember:focus+.form-user__indicator {
+    border-color: #663d15;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+.form-user__remember:not(:checked)+.form-user__indicator .form-user__indicator-cross {
+    display: none;
+}
+
+.form-user__remember:checked+.form-user__indicator .form-user__indicator-cross {
+    display: block;
+}
+
+.form-user__restore {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.form-user__restore:hover,
+.form-user__restore:focus {
+    text-decoration: none;
+}
+
+.form-user__submit {
+    width: 100%;
 }
