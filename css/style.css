@@ -336,3 +336,106 @@ a {
     flex-grow: 1;
     margin-top: 20px;
 }
+
+.main-footer {
+    width: 100%;
+    padding: 60px 0 40px;
+    color: #ffffff;
+    background-color: #232323;
+    background-image: url('../img/background-ripple-footer.jpg');
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.main-footer__inner {
+    display: flex;
+}
+
+.main-footer__contact {
+    margin-right: 80px;
+}
+
+.contact {
+    width: 320px;
+}
+
+.contact__address {
+    font-style: normal;
+}
+
+.contact__link {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.contact__link:hover {
+    text-decoration: none;
+}
+
+.contact__phone {
+    margin: 0;
+}
+
+.contact__number {
+    color: #ffffff;
+}
+
+.contact__number:hover,
+.contact__number:focus {
+    text-decoration: underline;
+}
+
+.social {
+    width: 141px;
+    text-align: center;
+}
+
+.social__text {
+    display: block;
+    margin-bottom: 18px;
+}
+
+.social__list {
+    display: flex;
+    justify-content: space-between;
+    width: 141px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 43px;
+    height: 43px;
+    background-color: #000000;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.social__link:hover,
+.social__link:focus {
+    background-color: #ffffff;
+}
+
+.social__link:hover path,
+.social__link:focus path {
+    fill: #000000;
+}
+
+.main-footer__developed {
+    margin: 0;
+    margin-left: auto;
+}
+
+.developed {
+    width: 140px;
+    text-align: center;
+}
+
+.developed__text {
+    display: block;
+    margin-bottom: 18px;
+}
