@@ -237,8 +237,14 @@ a {
     cursor: pointer;
 }
 
-.button:hover,
-.button:focus {
+.button--disabled {
+    cursor: auto;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+.button:hover:not(.button--disabled),
+.button:focus:not(.button--disabled) {
     background-color: #663d15;
 }
 
@@ -624,4 +630,56 @@ a {
 
 .form-user__submit {
     width: 100%;
+}
+
+.modal--show {
+    display: block;
+    animation-name: behavior-form;
+    animation-duration: 0.6s;
+}
+
+.modal--error {
+    animation-name: shake-form;
+    animation-duration: 0.6s;
+}
+
+@keyframes behavior-form {
+    0% {
+        transform: translate(-50%, -2000px);
+    }
+
+    70% {
+        transform: translate(-50%, calc(-50% + 30px));
+    }
+
+    90% {
+        transform: translate(-50%, calc(-50% + -10px));
+    }
+
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes shake-form {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translate(calc(-50% - 10px), -50%);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translate(calc(-50% + 10px), -50%);
+    }
 }
